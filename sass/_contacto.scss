@@ -1,0 +1,314 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+
+/* Comienza MAIN - Contacto*/
+
+
+.main-contacto{
+    height: 36rem;
+    background-image: url(../img/img-contacto-main2.png);
+    background-size: cover;
+    background-position-y:top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      #texto-main-servicios{
+        padding: 0rem 3rem;
+        text-align: center;
+
+            @include mobile {
+            padding: 0rem 2rem;
+            }
+             
+            @include tablet-v {
+            padding: 0rem 2rem;
+            }
+
+        .titulo-main-contacto{
+          font-family: $font_titulo;
+          font-size: $font_size_titulo;
+          color: $color_font_w;
+          font-weight: 100;
+          line-height: 2.4rem;
+          margin: 1rem 0rem;
+        }
+ 
+        @include mobile {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        }
+         
+        @include tablet-v {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        }
+             
+        @include tablet-h {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        }
+
+        .parrafo-blanco{
+          font-family: $font_parrafo;
+          color: $color_font_w;
+          font-size: $font_size_parrafo;
+          text-align:center;
+          letter-spacing: 0.2rem;
+          line-height: 1.3rem;
+     
+          @include mobile {
+          font-size: 0.7rem;
+        line-height: 1.1rem;
+        }
+                 
+          @include tablet-v {
+          font-size: 0.7rem;
+          line-height: 1.1rem;
+          }
+                     
+          @include tablet-h {
+          font-size: 0.8rem;
+          }
+         }
+      }
+}
+
+/* Termina MAIN - Contacto*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza PASOS - Contacto*/
+
+
+main {
+    background-color: #ededed;
+    margin: 0rem;
+    padding: 0rem;
+
+
+  .contacto{
+    padding: 2rem 4rem;
+
+    @include mobile {
+    padding: 2rem 3.5rem;
+    }
+    
+    @include tablet-v {
+    padding: 2rem 4rem;
+    }
+    
+    @include tablet-h {
+    padding: 2rem 5rem;
+    }
+
+
+
+    .titulo-main{
+        font-family: $font_titulo;
+        font-size: $font_size_titulo;
+        color: $color_font_b;
+        font-weight: 100;
+        line-height: 2.4rem;
+        margin: 2.6rem 0rem;
+    
+        @include mobile {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+    
+        @include tablet-v {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin: 1.9rem 0rem;
+        }
+        
+        @include tablet-h {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+
+    }
+
+    .col-contacto{
+        padding: 1rem 2.3rem 1rem 2.3rem;
+
+        @include mobile {
+        padding: 1rem 0.8rem 2rem 0.8rem;
+        }
+        
+        @include tablet-v {
+        padding: 1rem 8rem 1rem 0.8rem;
+        } 
+        
+        @include tablet-h {
+            padding: 1rem 1.6rem 1rem 1.6rem;
+            } 
+    }
+
+  }
+
+}
+
+/* Termina PASOS - Contacto*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza FORMULARIO - Contacto*/
+
+.formulario{
+
+    background-color: white;
+
+    #texto-main{
+    padding: 2rem 3.5rem;
+
+    @include mobile {
+    padding: 3rem 2rem 1rem 2rem;
+    }
+
+    @include tablet-v {
+    padding: 4rem 12rem 1rem 3.5rem;
+    }
+
+    @include tablet-h {
+    padding: 4rem 3.5rem 1rem 3.5rem;
+    }
+    }
+
+    .row{
+       padding: 0rem;
+       margin: 0rem;
+       display: flex;
+       justify-content: center;
+    }
+
+
+    .cajas-formulario{
+       margin: 0rem 5rem;
+
+       @include mobile {
+       margin: 0rem 2rem;
+       }
+        
+        @include tablet-v {
+        margin: 0rem 3.5rem;
+        }
+   
+    
+       .input-form{
+        display: block;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem 4rem;
+
+        @include mobile {
+        padding: 2rem 1rem;
+        }
+             
+        @include tablet-v {
+        padding: 2rem 2rem;
+        }
+
+        @include tablet-h {
+            padding: 2rem 1.5rem;
+            }
+
+        
+
+          label{
+            font-family: $font_parrafo;
+            color: $color_font_b;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+
+            @include mobile {
+            font-size: 0.8rem;
+            }
+            
+            @include tablet-v {
+            font-size: 0.9rem;
+            }
+            
+            @include tablet-h {
+            font-size: 0.9rem;
+            }
+          }
+
+          .input{
+             border-color: black;
+             border-top: none;
+             border-left: none;
+             border-right: none;
+             width: 100%;
+          }
+
+          #department-selection{
+            background-color: white;
+            width: 100%;
+            font-family: $font_parrafo;
+            color:#808080 ;
+            font-size: 1rem;
+          }
+
+          .area-input-text{
+            border-color: black;
+            display: block;
+            width: 100%;
+            height: 5rem;
+            margin: 1rem 0rem;
+          }
+        }
+
+    }
+
+    .row-btn{
+        padding:1rem 0rem 6rem 0rem;
+
+        .button-center{
+           display: flex;
+           justify-content: center;
+
+           .btn-negro {
+              display: flex;
+              justify-content: center;
+              background-color: black;
+              border: 0.1rem solid black;
+              border-radius: 0.5rem;
+              padding: 0.8rem;
+              font-weight: 600;
+
+              .a_btn-negro{
+                font-family: $font_parrafo;
+                font-size: 0.9rem;
+                text-decoration: none;
+                list-style: none;
+                color: $color_font_w; 
+            }
+
+            #btn_img{
+                width: 2.5rem;
+                padding-left: 0.3rem;
+             }
+        }
+        }
+    }
+
+}
+
+
+
+       

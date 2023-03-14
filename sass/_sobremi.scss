@@ -1,0 +1,219 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+
+/* Estilos generales - Sobre mi*/
+
+#texto-main{
+    padding: 3.5rem;
+     
+    @include mobile {
+    padding: 5rem 3.5rem;
+    }
+     
+    @include tablet-v {
+    padding: 3rem 12rem 3rem 3.5rem;
+    }
+    
+    @include tablet-h {
+    padding: 2.9rem 3.5rem;
+    }
+}
+
+.parrafo{
+    font-family: $font_parrafo;
+    font-size: $font_size_parrafo;
+    color: $color_font_b;
+    letter-spacing: 0.15rem;
+    line-height: 1.1rem;
+
+    @include mobile {
+    font-size: 0.75rem;
+    letter-spacing: 0.12rem;
+    line-height: 1rem;
+    }
+
+    @include tablet-v {
+    font-size: 0.7rem;
+    letter-spacing: 0.11rem;
+    line-height: 1rem;
+    }
+
+    @include tablet-h {
+    font-size: 0.7rem;
+    letter-spacing: 0.11rem;
+    line-height: 1rem;
+    }
+   }
+
+.titulo-main{
+  font-family: $font_titulo;
+  font-size: $font_size_titulo;
+  color: $color_font_b;
+  font-weight: 100;
+  line-height: 2.4rem;
+  margin: 2.6rem 0rem;
+
+  @include mobile {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin: 1.9rem 0rem;
+  }
+
+  @include tablet-v {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin: 1.9rem 0rem;
+  }
+  
+  @include tablet-h {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin: 1.9rem 0rem;
+  }
+
+  }
+
+/* Comienza MAIN - Sobre mi*/
+
+.main-sobremi {
+    background-color: #ededed;
+    margin: 0rem;
+    padding: 2rem 0rem;
+
+    .col-texto-main{
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+        }
+}
+
+.col-img-sobremi{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    #img-sobremi{
+       width: 20rem;
+       margin: 0rem 4rem;
+       padding: 1rem;
+
+       @include mobile {
+       padding: 0rem 0.1rem 3rem 0.1rem;
+       }
+    
+       @include tablet-v {
+       padding: 0rem 0.3rem 3rem 0.3rem;
+       }
+
+    }
+}
+
+
+/* Termina MAIN - Sobre mi*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza PROCESO - Sobre mi*/
+
+ .main-proceso{
+    background-color:#ffffff;
+    margin: 0rem;
+    padding: 4rem 0rem;
+
+    #texto-sobremi{
+        padding: 3.5rem;
+     }
+
+     .col-proceso{
+       display: flex;
+       align-items: center;
+       justify-content:center;
+
+       .proceso-items{
+          width: 22rem;
+          margin: 1rem 2rem 1rem 2rem;
+        }
+
+        .accordion-button:not(.collapsed){ 
+           background-color: #ffffff;
+           color: black;
+        }
+     }
+}
+
+/* Termina PROCESO - Sobre mi*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza VICCAS - Sobre mi*/
+
+
+.section-viccas{
+   background-color: #ededed;
+   padding: 1rem 2rem;
+
+   @include mobile {
+    padding: 3.5rem 2rem;
+    }
+
+    @include tablet-v {
+        padding: 3.5rem 2rem;
+    }
+
+    .col-img-viccas{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       @include mobile {
+        padding: 3rem 0rem;
+        }
+
+       @include tablet-v {
+        padding: 3rem 0rem;
+       }
+
+       .img-viccas-absolute{
+          position: absolute;
+
+          #img-viccas1{
+             height: 20rem;
+             margin-right: 6rem;
+          }
+        }
+
+        .img-viccas-relative{
+           position:relative;
+
+           #img-viccas2{
+              height: 17rem;
+              margin-left: 10rem;
+            }
+        }
+    }
+
+
+    #texto-sobremi{
+       padding: 4rem;
+
+       @include mobile {
+        padding: 0rem 1.6rem;
+        }
+
+        @include tablet-v {
+            padding: 0rem 1.6rem;
+        }
+
+          .parrafo-negrita{
+             font-weight: 600;
+          }
+    }
+}

@@ -1,0 +1,318 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+
+/* Comienza MAIN - Servicios*/
+
+.main-servicios{
+    height: 36rem;
+    background-image: url(../img/img-servicio-main.png);
+    background-size: cover;
+    background-position-y:top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   @include mobile {
+       background-position-y:bottom;
+       display: flex;
+       align-items: baseline;
+       justify-content: center;
+       padding-top: 4rem;
+       background-image: url(../img/img-servicio-main-mobile.png);
+    }
+
+    @include tablet-v {
+        background-position-y:bottom;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        padding-top: 4rem;
+        background-image: url(../img/img-servicio-main-mobile.png);
+    }                 
+
+    .titulo-servicios{
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+    }
+
+    #texto-main-servicios{
+       padding: 0rem 2rem;
+      
+       @include mobile {
+        text-align: center;
+       }
+
+       @include tablet-v {
+        text-align: center;
+       }
+    }
+
+    }
+
+   .titulo-main-servicios{
+       font-family: $font_titulo;
+       font-size: $font_size_titulo;
+       color: $color_font_b;
+       font-weight: 100;
+       line-height: 2.4rem;
+       margin: 2.6rem 0rem;
+
+       @include mobile {
+        font-size: 1.55rem;
+        line-height: 1.9rem;
+        }
+    
+        @include tablet-v {
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+        }
+    
+        @include tablet-h {
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        }
+    }
+
+/* Termina MAIN - Servicios*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza MENU - Servicios */
+
+
+.menu-servicios{
+    height: auto ;
+    padding: 3rem 0rem 2rem 0rem;
+    background-color: #ffffff;
+
+    @include mobile {
+    display: none;
+    }
+    
+    @include tablet-v {
+    display: none;
+    }
+
+    .texto-footer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        ul{
+           padding: 0rem;
+        }
+
+        .menu-servicio{
+           display: inline-block;
+           padding: 0rem 4rem;  
+           text-decoration: none;
+           list-style: none;
+           font-family: 'Montserrat', sans-serif;
+           font-size: 1.2rem;
+           font-weight: 600;
+        
+            @include tablet-h {
+            font-size: 1rem; 
+            padding: 0rem 3.6rem; 
+            }
+        }
+        
+        .a-menu-servicios{
+           text-decoration: none;
+           list-style: none;
+           color: black;
+        }
+    }
+}
+
+ 
+/* Termina MENU - Servicios*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza SERVICIO 1 y 3 - Servicios */
+
+
+.main1 {
+    background-color:#ededed;
+    margin: 0rem;
+    padding: 1rem 0rem;
+
+    .texto-servicio{
+        padding: 0rem 2rem;
+
+    }
+
+    .col-texto-main{
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+
+           #texto-servicios{
+              padding: 2rem 3.5rem;
+
+              .parrafo{
+                font-family: $font_parrafo;
+                font-size: $font_size_parrafo;
+                color: $color_font_b;
+                letter-spacing: 0.15rem;
+                line-height: 1.1rem;
+            
+                @include mobile {
+                font-size: 0.75rem;
+                letter-spacing: 0.12rem;
+                line-height: 1rem;
+                }
+            
+                @include tablet-v {
+                font-size: 0.7rem;
+                letter-spacing: 0.11rem;
+                line-height: 1rem;
+                }
+            
+                @include tablet-h {
+                font-size: 0.7rem;
+                letter-spacing: 0.11rem;
+                line-height: 1rem;
+                }
+               }
+            
+              .titulo-main{
+                font-family: $font_titulo;
+                font-size: $font_size_titulo;
+                color: $color_font_b;
+                font-weight: 100;
+                line-height: 2.4rem;
+                margin: 2.6rem 0rem;
+            
+                @include mobile {
+                font-size: 1.7rem;
+                line-height: 2rem;
+                margin: 1.9rem 0rem;
+                }
+            
+                @include tablet-v {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                margin: 1.9rem 0rem;
+                }
+              
+                @include tablet-h {
+                font-size: 1.8rem;
+                line-height: 2rem;
+                margin: 1.9rem 0rem;
+                }
+            
+              }
+
+              .btn1 {
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                border: 0.1rem solid black;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                font-weight: 600;
+                margin: 2rem 0rem 0rem 0rem;
+
+                .a_btn{
+                   font-family: $font_parrafo;
+                   font-size: 0.9rem;
+                   text-decoration: none;
+                   list-style: none;
+                   color: $color_font_b;
+                   }
+                
+                #btn_img{
+                   width: 2.5rem;
+                   padding-left: 0.3rem;
+                   }
+              }
+            }
+
+        } 
+
+
+        #img-servicio{
+          width: 25rem;
+          margin: 0rem 4rem;
+          padding: 1.2rem;
+     }
+     
+    } 
+
+   /* Termina SERVICIO 1 y 3- Servicios*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza SERVICIO 2 - Servicios */
+
+
+  .main2{
+     background-color:#ffffff;
+     margin: 0rem;
+     padding: 1rem 0rem;
+
+     @extend .col-texto-main;
+
+     .texto-servicio{
+        padding: 0rem 2rem;
+
+    }
+
+
+   #texto-servicios{
+              padding: 2rem 6rem 2rem 3.5rem;
+
+              .btn1 {
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                border: 0.1rem solid black;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                font-weight: 600;
+                margin: 2rem 0rem 0rem 0rem;
+
+                .a_btn{
+                   font-family: $font_parrafo;
+                   font-size: 0.9rem;
+                   text-decoration: none;
+                   list-style: none;
+                   color: $color_font_b;
+                   }
+                
+                #btn_img{
+                   width: 2.5rem;
+                   padding-left: 0.3rem;
+                   }
+              }
+            }
+
+         #img-servicio{
+          width: 25rem;
+          margin: 0rem 4rem;
+          padding: 1.2rem;
+        } 
+
+       
+     }
+     
+
+ 
+
+
+
+

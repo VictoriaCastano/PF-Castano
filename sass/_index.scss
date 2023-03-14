@@ -1,0 +1,377 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+@use "./animaciones" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+  *{
+    margin: 0rem;
+    padding: 0rem;
+    overflow-x: hidden;
+   }
+
+/* Comienza MAIN - Index*/  
+
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+main {
+    background-color: #ededed;
+    margin: 0rem;
+    padding: 0rem;
+
+    .col-texto-main{
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+
+        #texto-main{
+           padding: 3.5rem;
+     
+           @include mobile {
+           padding: 5rem 3.5rem;
+           }
+     
+           @include tablet-v {
+           padding: 3rem 12rem 3rem 3.5rem;
+           }
+    
+           @include tablet-h {
+           padding: 2.9rem 3.5rem;
+           }
+
+              .parrafo{
+                  font-family: $font_parrafo;
+                  font-size: $font_size_parrafo;
+                  color: $color_font_b;
+                  letter-spacing: 0.15rem;
+                  line-height: 1.1rem;
+        
+                  @include mobile {
+                  font-size: 0.75rem;
+                  letter-spacing: 0.12rem;
+                  line-height: 1rem;
+                  }
+            
+                  @include tablet-v {
+                  font-size: 0.7rem;
+                  letter-spacing: 0.11rem;
+                  line-height: 1rem;
+                  }
+          
+                  @include tablet-h {
+                  font-size: 0.7rem;
+                  letter-spacing: 0.11rem;
+                  line-height: 1rem;
+                  }
+                 }
+            
+            .titulo-main{
+                font-family: $font_titulo;
+                font-size: $font_size_titulo;
+                color: $color_font_b;
+                font-weight: 100;
+                line-height: 2.4rem;
+                margin: 2.6rem 0rem;
+        
+                @include mobile {
+                font-size: 1.7rem;
+                line-height: 2rem;
+                margin: 1.9rem 0rem;
+                }
+            
+                @include tablet-v {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                margin: 1.9rem 0rem;
+                }
+                
+                @include tablet-h {
+                font-size: 1.8rem;
+                line-height: 2rem;
+                margin: 1.9rem 0rem;
+                }
+        
+                }
+            
+            .btn1 {
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                border: 0.1rem solid black;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                font-weight: 600;
+
+                .a_btn{
+                   font-family: $font_parrafo;
+                   font-size: 0.9rem;
+                   text-decoration: none;
+                   list-style: none;
+                   color: $color_font_b;
+                   }
+                
+                #btn_img{
+                   width: 2.5rem;
+                   padding-left: 0.3rem;
+                   }
+            }   
+        }       
+    }
+    
+    
+    
+    /* Imagen Main */
+   
+    .col-img-main{
+        margin: 0rem;
+        padding: 0rem;
+
+        #img-main{
+           max-width: 100%;
+           height: auto;
+        
+           @include tablet-h {
+           max-width: 100%;
+           height: 100%;
+           }
+        }
+    }
+
+}
+
+/* Termina MAIN - Index*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza DESTACADO - Index*/
+
+#destacado{
+   height: auto;
+   background-color: #999b86 ;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   padding: 4rem 0rem;
+
+   @include mobile {
+   padding: 4rem 3rem;
+   }
+
+    .titulo-blanco{
+       color: $color_font_w;
+       text-align: center;
+       font-family: $font_titulo;
+       font-size: $font_size_titulo;
+       font-weight: 100;
+       line-height: 2.4rem;
+       margin-bottom: 1rem;
+
+       @include mobile {
+       font-size: 1.7rem;
+       line-height: 2rem;
+       }
+        
+       @include tablet-v {
+       font-size: 1.8rem;
+       line-height: 2.4rem;
+       }
+            
+       @include tablet-h {
+       font-size: 1.8rem;
+       line-height: 2rem;
+       margin: 1.9rem 0rem;
+       }
+    }
+    
+    .parrafo-blanco{
+       font-family: $font_parrafo;
+       color: $color_font_w;
+       font-size: $font_size_parrafo;
+       text-align:center;
+       letter-spacing: 0.2rem;
+       line-height: 1.4rem;
+
+       @include mobile {
+       font-size: 0.8rem;
+       line-height: 1.1rem;
+       }
+            
+       @include tablet-v {
+       font-size: 0.9rem;
+       line-height: 1.2rem;
+       }
+                
+       @include tablet-h {
+       font-size: 0.8rem;
+       }
+    }
+}
+
+/* Termina DESTACADO - Index*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza ARTICLES Index */
+
+.articles{
+   margin: 0rem;
+   padding: 4rem;
+
+   @include mobile {
+   padding: 2rem;
+   }
+            
+   @include tablet-v {
+   padding: 2.2rem;
+   }
+                
+   @include tablet-h {
+   padding: 3rem; 
+   }
+    
+    .cards{
+        padding: 0.7rem;
+
+        @include tablet-v {
+        padding: 0.3rem;
+        }
+                           
+        @include tablet-h {
+        padding: 0.6rem;
+        }
+
+         .card{
+           border: none; 
+
+           .card-body{
+              padding: 0rem;
+              margin: 0rem;
+
+               .article-btn{
+                  background-color: transparent;
+                  font-weight: 600;
+                  border-style: none;
+                  padding: 1rem 0rem;
+                }
+            
+               .btn{
+                  font-family: $font_parrafo;
+                  color: $color_font_b;
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                }
+            
+               #btn-img{
+                  width: 2.5rem;
+                  padding-left: 0.3rem;
+                }
+            }
+        }
+    } 
+    
+}
+
+/* Termina ARTICLES - Index*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza CONTACTO Index */
+
+#contacto{
+    height: auto;
+    background-color: #ededed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+
+    @include mobile {
+    padding: 4rem;
+    }
+
+    .titulo-negro-centrado{
+        font-family: $font_titulo;
+        font-size: $font_size_titulo;
+        color: $color_font_b;
+        font-weight: 100;
+        line-height: 2.4rem;
+        margin: 1.3rem 0rem;
+        text-align: center;
+
+        @include mobile {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+                         
+        @include tablet-h {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin: 1.9rem 0rem;
+        }
+    }
+    
+    .parrafo_negro-centrado{
+        font-family: $font_parrafo;
+        font-size: $font_size_parrafo;
+        color: $color_font_b;
+        letter-spacing: 0.3rem;
+        text-align: center;
+
+        @include mobile {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        }
+                             
+        @include tablet-h {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        }
+    }
+    
+    .btn_center {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+        .btn-contacto{
+           margin: 2rem 0rem;
+        }
+
+        .btn1 {
+           display: flex;
+           justify-content: center;
+           background-color: white;
+           border: 0.1rem solid black;
+           border-radius: 0.5rem;
+           padding: 0.5rem;
+           font-weight: 600;
+        }
+    
+        .a_btn{
+           font-family: $font_parrafo;
+           font-size: 0.9rem;
+           text-decoration: none;
+           list-style: none;
+           color: $color_font_b;
+        }
+    
+        #btn_img{
+           width: 2.5rem;
+           padding-left: 0.3rem;
+        }
+    }
+}
+
+
+/* Termina CONTACTO - Index*/

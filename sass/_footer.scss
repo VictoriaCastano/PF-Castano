@@ -1,0 +1,100 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+ul{
+    padding: 0rem;
+}
+
+.footer{
+    height: auto ;
+    background-color: black;
+    padding: 3rem;
+
+    .texto-footer{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+
+        @include mobile {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        }
+                                 
+        @include tablet-h {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        }
+    }
+    .redes-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        
+        @include tablet-h {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+    
+    .mapa-footer{
+        display: inline-block;
+        padding: 0rem 1rem;  
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.1rem;
+        font-family: 'Cormorant Garamond', serif;
+
+        @include mobile {
+        display: block;
+        padding: 0.5rem 0rem;  
+        font-size: 1rem;
+        text-align: center;
+        }
+
+        @include tablet-h {
+        display: block;
+        padding: 0.5rem 0rem;  
+        font-size: 1.2rem;
+        text-align: center;
+        }
+    }
+    
+    .a-mapa-footer{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+
+    }
+    
+/* mixin*/
+
+    .img_redes_footer{
+        @include tamanos (3rem, 3rem);
+
+
+        @include mobile {
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+        }
+
+        @include tablet-h {
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+        }
+    }
+}

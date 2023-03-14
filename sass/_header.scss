@@ -1,0 +1,51 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+header {
+    width: 100%;
+    background-color: white;
+
+
+   body{
+    background-color: #ffffff;
+   }
+
+   .navbar{
+    display: block;
+   }
+
+   #container-logo{
+    display: flex;
+    justify-content: center;
+    height:4rem;
+   }
+
+   .navbar-toggler{
+    margin: 0.5rem;
+   }
+
+   .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+   }
+
+   .navbar-nav{
+    font-family: $font_titulo;
+    font-size: 1.2rem;
+    color: black;
+   }
+
+   .nav-item{
+    padding: 0 1.5rem 0 1.5rem;
+   }
+
+   .nav-item:hover{
+    color: #999b86;
+    font-weight: 700;
+   }
+
+}

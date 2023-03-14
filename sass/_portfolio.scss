@@ -1,0 +1,311 @@
+/* media queries*/
+@use "./mixins.scss" as *;
+
+/* variables*/
+@use "./variables" as *;
+
+/* Estilos generales - Sobre mi*/
+
+#texto-portfolio{
+    padding: 4rem;
+
+    @include mobile {
+    padding: 2rem 5rem;
+    }
+
+    @include tablet-v {
+    padding: 2rem 10rem;
+    }
+
+    @include tablet-h {
+    padding: 1rem;
+    }
+}
+
+.parrafo_frase{
+   font-family: $font_parrafo;
+   font-size: 1rem;
+   color: $color_font_b;
+   letter-spacing: 0.15rem;
+   line-height: 1.3rem;
+   text-align: center;
+
+
+   @include mobile {
+   font-size: 0.7rem;
+   line-height: 1rem;
+   }
+
+   @include tablet-v {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    }
+                         
+   @include tablet-h {
+   font-size: 0.85rem;
+   line-height: 1.15rem;
+   }
+}
+
+/* Comienza MAIN - Sobre mi*/
+
+.main-sobremi {
+    background-color: #ededed;
+    margin: 0rem;
+    padding: 2rem 0rem;
+
+    .col-texto-main{
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+        }
+}
+
+.col-img-portfolio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    #img-portfolio{
+       width: 20rem;
+       margin: 0rem 4rem;
+       padding: 0rem;
+
+       @include mobile {
+       padding: 0rem 0.1rem;
+       }
+    
+       @include tablet-v {
+       padding: 0rem 0.3rem;
+       }
+
+    }
+}
+
+
+/* Termina MAIN - Portfolio*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza PROYECTOS - Portfolio*/
+
+#proyectos{
+
+    #texto-main{
+        padding: 3rem 0rem 0rem 3.5rem;
+  
+        @include mobile {
+        padding: 5rem 0rem 0rem 3.5rem;
+        }
+  
+        @include tablet-v {
+        padding: 3rem 5rem 0rem 3.5rem;
+        }
+ 
+        @include tablet-h {
+        padding: 2.9rem 0rem 0rem 3.5rem;
+        }
+
+      .titulo-main{
+        font-family: $font_titulo;
+        font-size: $font_size_titulo;
+        color: $color_font_b;
+        font-weight: 100;
+        line-height: 2.4rem;
+        margin: 2.6rem 0rem;
+
+        @include mobile {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+    
+        @include tablet-v {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin: 1.9rem 0rem;
+        }
+        
+        @include tablet-h {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+      }   
+    }
+
+    .articles{
+        margin: 0rem;
+        padding: 2rem 4rem;
+     
+        @include mobile {
+        padding: 2rem;
+        }
+                 
+        @include tablet-v {
+        padding: 2.2rem;
+        }
+                     
+        @include tablet-h {
+        padding: 3rem; 
+        }
+         
+        .cards{
+             padding: 0.7rem;
+     
+             @include tablet-v {
+             padding: 0.3rem;
+             }
+                                
+             @include tablet-h {
+             padding: 0.6rem;
+             }
+     
+              .card{
+                border: none; 
+     
+                .card-body{
+                   padding: 0rem;
+                   margin: 0rem;
+     
+                    .article-btn{
+                       background-color: transparent;
+                       font-weight: 600;
+                       border-style: none;
+                       padding: 1rem 0rem;
+                    }
+                 
+                    .btn{
+                       font-family: $font_parrafo;
+                       color: $color_font_b;
+                       font-weight: 400;
+                       font-size: 0.9rem;
+
+                       @include mobile {
+                       font-size: 0.77rem;
+                       }
+
+                       @include tablet-v {
+                        font-size: 0.9rem;
+                        }
+                    }
+                 
+                    #btn-img{
+                       width: 2.5rem;
+                       padding-left: 0.2rem;
+
+                       @include mobile {
+                       width: 2.3rem;
+                       padding-left: 0rem;
+                       }
+                    }
+                }
+            }
+        } 
+         
+    }
+
+
+}
+
+
+
+
+/* Termina PROYECTOS - Portfolio*/
+
+
+/* ---------------------------------------------------------*/
+
+
+/* Comienza CONTACTO - Portfolio*/
+
+#contacto{
+    height: auto;
+    background-color: #ededed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+
+    @include mobile {
+    padding: 4rem;
+    }
+
+    .titulo-negro-centrado{
+        font-family: $font_titulo;
+        font-size: $font_size_titulo;
+        color: $color_font_b;
+        font-weight: 100;
+        line-height: 2.4rem;
+        margin: 1.3rem 0rem;
+        text-align: center;
+
+        @include mobile {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.9rem 0rem;
+        }
+                         
+        @include tablet-h {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin: 1.9rem 0rem;
+        }
+    }
+    
+    .parrafo_negro-centrado{
+        font-family: $font_parrafo;
+        font-size: $font_size_parrafo;
+        color: $color_font_b;
+        letter-spacing: 0.3rem;
+        text-align: center;
+
+        @include mobile {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        }
+                             
+        @include tablet-h {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        }
+    }
+    
+    .btn_center {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+        .btn-contacto{
+           margin: 2rem 0rem;
+        }
+
+        .btn1 {
+           display: flex;
+           justify-content: center;
+           background-color: white;
+           border: 0.1rem solid black;
+           border-radius: 0.5rem;
+           padding: 0.5rem;
+           font-weight: 600;
+        }
+    
+        .a_btn{
+           font-family: $font_parrafo;
+           font-size: 0.9rem;
+           text-decoration: none;
+           list-style: none;
+           color: $color_font_b;
+        }
+    
+        #btn_img{
+           width: 2.5rem;
+           padding-left: 0.3rem;
+        }
+    }
+}
+
+
+/* Termina CONTACTO - Portfolio*/

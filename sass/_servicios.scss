@@ -92,6 +92,7 @@
     height: auto ;
     padding: 3rem 0rem 2rem 0rem;
     background-color: #ffffff;
+    overflow-x: hidden;
 
     @include mobile {
     display: none;
@@ -147,16 +148,26 @@
     background-color:#ededed;
     margin: 0rem;
     padding: 1rem 0rem;
+    overflow-x: hidden;
 
     .texto-servicio{
         padding: 0rem 2rem;
+
+        @include mobile {
+         padding: 0rem 1rem;
+         }
+
+         @include tablet-v {
+         padding: 0rem 5rem 0rem 1rem;
+         }
+
 
     }
 
     .col-texto-main{
         display: flex;
         align-items: center;
-        padding-right: 0rem;
+        overflow-x: hidden;
 
            #texto-servicios{
               padding: 2rem 3.5rem;
@@ -247,6 +258,7 @@
           width: 25rem;
           margin: 0rem 4rem;
           padding: 1.2rem;
+          overflow-x: hidden;
      }
      
     } 
@@ -264,17 +276,28 @@
      background-color:#ffffff;
      margin: 0rem;
      padding: 1rem 0rem;
+     overflow-x: hidden;
 
      @extend .col-texto-main;
 
      .texto-servicio{
         padding: 0rem 2rem;
+        overflow-x: hidden;
+
+        @include mobile {
+         padding: 0rem 1rem;
+         }
+
+         @include tablet-v {
+            padding: 0rem 5rem 0rem 1rem;
+            }
 
     }
 
 
    #texto-servicios{
               padding: 2rem 6rem 2rem 3.5rem;
+              overflow-x: hidden;
 
               .btn1 {
                 display: flex;
@@ -305,6 +328,7 @@
           width: 25rem;
           margin: 0rem 4rem;
           padding: 1.2rem;
+          overflow-x: hidden;
         } 
 
        

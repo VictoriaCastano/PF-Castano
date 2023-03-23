@@ -42,7 +42,6 @@
 * {
   margin: 0rem;
   padding: 0rem;
-  overflow-x: hidden;
 }
 
 /* Comienza MAIN - Index*/
@@ -82,7 +81,7 @@ main .col-texto-main #texto-main {
 }
 main .col-texto-main #texto-main .parrafo {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
   letter-spacing: 0.15rem;
   line-height: 1.1rem;
@@ -110,7 +109,7 @@ main .col-texto-main #texto-main .parrafo {
 }
 main .col-texto-main #texto-main .titulo-main {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -182,6 +181,7 @@ main .col-img-main #img-main {
   justify-content: center;
   align-items: center;
   padding: 4rem 0rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 575px) {
   #destacado {
@@ -192,7 +192,7 @@ main .col-img-main #img-main {
   color: white;
   text-align: center;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 100;
   line-height: 2.4rem;
   margin-bottom: 1rem;
@@ -219,7 +219,7 @@ main .col-img-main #img-main {
 #destacado .parrafo-blanco {
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   letter-spacing: 0.2rem;
   line-height: 1.4rem;
@@ -311,6 +311,7 @@ main .col-img-main #img-main {
   justify-content: center;
   align-items: center;
   padding: 3rem 0rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 575px) {
   #contacto {
@@ -319,7 +320,7 @@ main .col-img-main #img-main {
 }
 #contacto .titulo-negro-centrado {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -342,7 +343,7 @@ main .col-img-main #img-main {
 }
 #contacto .parrafo_negro-centrado {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
   letter-spacing: 0.3rem;
   text-align: center;
@@ -506,6 +507,10 @@ ul {
   list-style: none;
   color: #ffffff;
 }
+.footer .a-mapa-footer:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
 .footer .img_redes_footer {
   width: 3rem;
   height: 3rem;
@@ -525,15 +530,22 @@ ul {
   }
 }
 
+.img_redes_footer:hover {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 /* media queries*/
 /* variables*/
 /* Estilos generales - Sobre mi*/
 #texto-main {
   padding: 3.5rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 575px) {
   #texto-main {
     padding: 5rem 3.5rem;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -549,7 +561,7 @@ ul {
 
 .parrafo {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
   letter-spacing: 0.15rem;
   line-height: 1.1rem;
@@ -578,7 +590,7 @@ ul {
 
 .titulo-main {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -611,6 +623,7 @@ ul {
   background-color: #ededed;
   margin: 0rem;
   padding: 2rem 0rem;
+  overflow-x: hidden;
 }
 .main-sobremi .col-texto-main {
   display: flex;
@@ -631,6 +644,7 @@ ul {
 @media screen and (max-width: 575px) {
   .col-img-sobremi #img-sobremi {
     padding: 0rem 0.1rem 3rem 0.1rem;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -646,6 +660,7 @@ ul {
   background-color: #ffffff;
   margin: 0rem;
   padding: 4rem 0rem;
+  overflow-x: hidden;
 }
 .main-proceso #texto-sobremi {
   padding: 3.5rem;
@@ -674,6 +689,7 @@ ul {
 @media screen and (max-width: 575px) {
   .section-viccas {
     padding: 3.5rem 2rem;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -689,6 +705,7 @@ ul {
 @media screen and (max-width: 575px) {
   .section-viccas .col-img-viccas {
     padding: 3rem 0rem;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -716,6 +733,7 @@ ul {
 @media screen and (max-width: 575px) {
   .section-viccas #texto-sobremi {
     padding: 0rem 1.6rem;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -781,7 +799,7 @@ ul {
 
 .titulo-main-servicios {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -813,6 +831,7 @@ ul {
   height: auto;
   padding: 3rem 0rem 2rem 0rem;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 575px) {
   .menu-servicios {
@@ -860,21 +879,32 @@ ul {
   background-color: #ededed;
   margin: 0rem;
   padding: 1rem 0rem;
+  overflow-x: hidden;
 }
 .main1 .texto-servicio {
   padding: 0rem 2rem;
 }
+@media screen and (max-width: 575px) {
+  .main1 .texto-servicio {
+    padding: 0rem 1rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .main1 .texto-servicio {
+    padding: 0rem 5rem 0rem 1rem;
+  }
+}
 .main1 .col-texto-main, .main1 .main2 {
   display: flex;
   align-items: center;
-  padding-right: 0rem;
+  overflow-x: hidden;
 }
 .main1 .col-texto-main #texto-servicios, .main1 .main2 #texto-servicios {
   padding: 2rem 3.5rem;
 }
 .main1 .col-texto-main #texto-servicios .parrafo, .main1 .main2 #texto-servicios .parrafo {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
   letter-spacing: 0.15rem;
   line-height: 1.1rem;
@@ -902,7 +932,7 @@ ul {
 }
 .main1 .col-texto-main #texto-servicios .titulo-main, .main1 .main2 #texto-servicios .titulo-main {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -954,6 +984,7 @@ ul {
   width: 25rem;
   margin: 0rem 4rem;
   padding: 1.2rem;
+  overflow-x: hidden;
 }
 
 /* Termina SERVICIO 1 y 3- Servicios*/
@@ -963,12 +994,25 @@ ul {
   background-color: #ffffff;
   margin: 0rem;
   padding: 1rem 0rem;
+  overflow-x: hidden;
 }
 .main2 .texto-servicio {
   padding: 0rem 2rem;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 575px) {
+  .main2 .texto-servicio {
+    padding: 0rem 1rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .main2 .texto-servicio {
+    padding: 0rem 5rem 0rem 1rem;
+  }
 }
 .main2 #texto-servicios {
   padding: 2rem 6rem 2rem 3.5rem;
+  overflow-x: hidden;
 }
 .main2 #texto-servicios .btn1 {
   display: flex;
@@ -995,6 +1039,7 @@ ul {
   width: 25rem;
   margin: 0rem 4rem;
   padding: 1.2rem;
+  overflow-x: hidden;
 }
 
 /* media queries*/
@@ -1064,18 +1109,23 @@ ul {
   align-items: center;
 }
 .col-img-portfolio #img-portfolio {
-  width: 20rem;
+  width: 18rem;
   margin: 0rem 4rem;
   padding: 0rem;
 }
 @media screen and (max-width: 575px) {
   .col-img-portfolio #img-portfolio {
-    padding: 0rem 0.1rem;
+    padding: 0rem 2rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .col-img-portfolio #img-portfolio {
     padding: 0rem 0.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-img-portfolio #img-portfolio {
+    width: 15rem;
   }
 }
 
@@ -1102,7 +1152,7 @@ ul {
 }
 #proyectos #texto-main .titulo-main {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -1219,7 +1269,7 @@ ul {
 }
 #contacto .titulo-negro-centrado {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;
@@ -1242,7 +1292,7 @@ ul {
 }
 #contacto .parrafo_negro-centrado {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: black;
   letter-spacing: 0.3rem;
   text-align: center;
@@ -1318,7 +1368,7 @@ ul {
 }
 .main-contacto #texto-main-servicios .titulo-main-contacto {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: white;
   font-weight: 100;
   line-height: 2.4rem;
@@ -1345,7 +1395,7 @@ ul {
 .main-contacto #texto-main-servicios .parrafo-blanco {
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   letter-spacing: 0.2rem;
   line-height: 1.3rem;
@@ -1396,7 +1446,7 @@ main .contacto {
 }
 main .contacto .titulo-main {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
   font-weight: 100;
   line-height: 2.4rem;

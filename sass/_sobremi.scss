@@ -7,11 +7,14 @@
 
 /* Estilos generales - Sobre mi*/
 
+
 #texto-main{
     padding: 3.5rem;
+    overflow-x: hidden;
      
     @include mobile {
     padding: 5rem 3.5rem;
+    overflow-x: hidden;
     }
      
     @include tablet-v {
@@ -83,6 +86,7 @@
     background-color: #ededed;
     margin: 0rem;
     padding: 2rem 0rem;
+    overflow-x: hidden;
 
     .col-texto-main{
         display: flex;
@@ -103,6 +107,7 @@
 
        @include mobile {
        padding: 0rem 0.1rem 3rem 0.1rem;
+       overflow-x: hidden;
        }
     
        @include tablet-v {
@@ -125,6 +130,7 @@
     background-color:#ffffff;
     margin: 0rem;
     padding: 4rem 0rem;
+    overflow-x: hidden;
 
     #texto-sobremi{
         padding: 3.5rem;
@@ -134,6 +140,7 @@
        display: flex;
        align-items: center;
        justify-content:center;
+   
 
        .proceso-items{
           width: 22rem;
@@ -162,6 +169,7 @@
 
    @include mobile {
     padding: 3.5rem 2rem;
+    overflow-x: hidden;
     }
 
     @include tablet-v {
@@ -175,6 +183,7 @@
 
        @include mobile {
         padding: 3rem 0rem;
+        overflow-x: hidden;
         }
 
        @include tablet-v {
@@ -206,6 +215,7 @@
 
        @include mobile {
         padding: 0rem 1.6rem;
+        overflow-x: hidden;
         }
 
         @include tablet-v {

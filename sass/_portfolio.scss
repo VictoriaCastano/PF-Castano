@@ -67,17 +67,21 @@
    align-items: center;
 
     #img-portfolio{
-       width: 20rem;
+       width: 18rem;
        margin: 0rem 4rem;
        padding: 0rem;
 
        @include mobile {
-       padding: 0rem 0.1rem;
+       padding: 0rem 2rem;
        }
     
        @include tablet-v {
        padding: 0rem 0.3rem;
        }
+
+       @include tablet-h {
+        width: 15rem;
+        }
 
     }
 }
